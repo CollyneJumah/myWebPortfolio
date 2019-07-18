@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CollinsJumah</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/grid.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">-->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link type="image" rel="icon" href="images/Collyne-1-1.png">
+
+    <style>
+      .hero{
+        background: black url("images/1.jpeg") center / cover;
+      }
+      .is-horizontal-center{
+        justify-content: center;
+      }
+      .has-image-centered {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 1024px) {
+        .hero{
+          background: black url("images/2.jpg") center / cover;
+        }
+        @media (max-width: 768px) {
+          .hero{
+            background: black url("images/3.jpeg") center / cover;
+          }
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero is-fullheight is-primary">
+
+      <nav class="navbar hero-head is-fixed-top is-transparent" role="navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#" style="font-weight: bold">
+              WebArtisan
+            </a>
+            <span class="navbar-burger burger" data-target="navMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </span>
+          </div>
+          <div class="navbar-menu is-mobile is-marginless heading has-text-weight-bold" id="navMenu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active" href="index.html">Home</a>
+              <a class="navbar-item" href="#">About</a>
+              <a class="navbar-item" href="#">Portfolio</a>
+              <a class="navbar-item" href="blogs.html" target="_blank">Blog</a>
+
+            </div>
+          </div>
+
+        </div>
+      </nav>
+
+
+
+
+<!--      navigation bar-->
+<!--      <nav class="hero-head">-->
+<!--        <div class="columns is-mobile is-marginless heading has-text-weight-bold">-->
+<!--          <div class="navbar-item column left">-->
+<!--            <figure class="navbar-item image">-->
+<!--              <img src="images/1.jpeg" alt="Logo" style="height: 1rem;width: 6.25rem">-->
+<!--            </figure>-->
+<!--          </div>-->
+<!--          <div class="column center desktop">-->
+<!--            <p class="navbar-item">Home</p>-->
+<!--            <p class="navbar-item">About</p>-->
+<!--            <p class="navbar-item">Portfolio</p>-->
+<!--            <p class="navbar-item">Blog</p>-->
+<!--          </div>-->
+<!--          <div class="column right">-->
+<!--            <p class="navbar-item desktop">Login</p>-->
+<!--            <p class="navbar-item desktop">Sign- up</p>-->
+<!--            <figure class="navbar-item image has-text-black">-->
+<!--              <i class="fa fa-bars" style="height: 1rem;width: 6.25rem"></i>-->
+<!--            </figure>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--      </nav>-->
+<header class="hero-body">
+    <div class="is-overlay has-text-centered single-spaced">
+      <h1 class="subtitle is-4 has-text-weight-light">Hey!</h1>
+      <h2 class="title is-1">CollinsJumah</h2>
+    </div>
+
+    <div class="is-flex has-image-centered">
+      <figure class="image is-96x96">
+        <img class="is-rounded" src="images/Collyne-1-1.png" alt="CollinsJumah">
+        <div class="has-text-centered">
+          <span class="icon ">
+            <a href="https://twitter.com/JumahCollyne" target="_blank"><i class="fab fa-twitter"></i></a>
+          </span>
+          <span class="icon">
+            <a target="_blank" href="https://www.facebook.com/collins.jumah.10"><i class="fab fa-facebook-f"></i></a>
+          </span>
+          <span class="icon">
+            <a href="https://github.com/CollyneJumah" target="_blank"><i class="fab fa-github" ></i></a>
+          </span>
+
+        </div>
+      </figure>
+
+    </div>
+
+
+</header>
+
+      <main class="hero-foot center">
+        <div id="grid" style="width: 768px;padding: 2rem">
+          <div id="a" class="center-column">
+            <p class="has-text-centered has-text-white">People can become developers from almost any background, whether they started programming at an early age and majored in computer science (CS).</p>
+          </div>
+          <div id="b" class="center-column">
+            <p class="title has-text-white"><i class="fas fa-tachometer-alt has-text-grey-light" style="width: 0.75rem;height: 0.75rem;"></i>1.9<span class="is-size-5">s</span>
+            </p>
+            <p class="subtitle has-text-white is-7">0-60 mph</p>
+          </div>
+          <div id="c">
+            <p class="title has-text-white"><i class="fas fa-home is-large has-text-grey-light" style="width: 0.75rem;height: 0.75rem;"></i>250<span class="is-size-5">s</span>
+            </p>
+            <p class="subtitle has-text-white is-7">0-60 mmH</p>
+          </div>
+          <div id="d">
+            <p class="title has-text-white"><i class="fas fa-home has-icons-left is-large has-text-grey-light" style="width: 0.75rem;height: 0.75rem;"></i>300<span class="is-size-5">s</span>
+            </p>
+            <p class="subtitle has-text-white is-7">0-60 Km/h</p>
+          </div>
+          <div id="e" class="center-column">
+            <a class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold" style="width: 100%;border: 0.5em solid white">
+              Let's Chat.
+            </a>
+          </div>
+        </div>
+      </main>
+
+    </section>
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
+<script>
+  (function() {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#'+burger.dataset.target);
+
+    burger.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+  })();
+</script>
