@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CollinsJumah|Blog</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link type="image" rel="icon" href="images/Collyne-1-1.png">
     <style>
@@ -16,7 +16,7 @@
             display: grid;
             /*grid-template-columns: 1fr minmax(0, 624px) 1fr;*/
             grid-template-columns:
-                [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+                    [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
         }
         .grid *{
             grid-column: md;
@@ -72,10 +72,10 @@
         </article>
 
         <div class="section is-paddingless-horizontal">
-            <h3 class="title is-3">School USSD</h1>
-  
-            <h4 class="subtitle is-4">USSD Application to easen parents access students Academic progress{Exam Results, fee Strucure, fee areas}.</h2>
+            <h1 class="title is-2">SCHOOL USSD </h1>
+            <h2 class="subtitle is-3">USSD Application to easen parents access students Academic progress{Exam Results, fee Strucure, fee areas}.</h2>
         </div>
+
         <div class="columns grid-xl is-mobile is-variable is-1 is-marginless">
             <div class="column">
                 <figure class="image card">
@@ -98,25 +98,100 @@
             </div>
         </div>
         <figcaption class="level">
-            <small class="level-item has-text-grey-light">You will also learn how Bulma can be integrated with JavaScript</small>
+            <small class="level-item has-text-grey-light">You will also learn how to integrate USSD gateway using Africstalking API </small>
         </figcaption>
-        <div class="content is-small notification">
-            <h1>Hello, World</h1>
+        <div class="content is-small notification has-text-justified">
+            <h3>Background Information</h3>
             <p>
-                DataTables is a jQuery JavaScript library to convert simple HTML table to dynamic feature rich table. The jQuery DataTables are very user friendly to list records with live add, edit, delete records without page refresh. Due to this, DataTables used widely in web application to list records.
-                So if you’re thinking to use jQuery DataTables in your project, then its very easy. You can easily implement jQuery DataTables in your project with PHP and Ajax. In this tutorial you will learn how to implement Live Add, Edit and Delete DataTables Records with Ajax PHP and MySQL.
-                We will cover this tutorial in easy steps to create live example to jQuery DataTables to list records with live add, edit and delete record functionality. You can also download complete project. The download link is located at the end of tutorial.
+                The mobile communications technology has quickly become the world’s most common way of transmitting voice, data, and services in the developing world.
+                They carry a potential of being the best media for dissemination of information because mobile services are widely available and inexpensive. Mobile phones are less inhibited by traditional access barriers that hinder the widespread use of many other communications technologies including geography, socioeconomic status, infrastructure such as electricity and literacy.
             </p>
             <p>
-                DataTables is a jQuery JavaScript library to convert simple HTML table to dynamic feature rich table. The jQuery DataTables are very user friendly to list records with live add, edit, delete records without page refresh. Due to this, DataTables used widely in web application to list records.
-                So if you’re thinking to use jQuery DataTables in your project, then its very easy. You can easily implement jQuery DataTables in your project with PHP and Ajax. In this tutorial you will learn how to implement Live Add, Edit and Delete DataTables Records with Ajax PHP and MySQL.
-                We will cover this tutorial in easy steps to create live example to jQuery DataTables to list records with live add, edit and delete record functionality. You can also download complete project. The download link is located at the end of tutorial.
+                Today's schools need to manage more information than ever before. Without a solid infrastructure for teachers, administrators and parents to share data, critical school information can be lost or communicated incorrectly, which affects the school's image.
+                Research indicates that parental involvement is an effective strategy to ensure student success (Barnard, 2004;
             </p>
             <p>
-                DataTables is a jQuery JavaScript library to convert simple HTML table to dynamic feature rich table. The jQuery DataTables are very user friendly to list records with live add, edit, delete records without page refresh. Due to this, DataTables used widely in web application to list records.
-                So if you’re thinking to use jQuery DataTables in your project, then its very easy. You can easily implement jQuery DataTables in your project with PHP and Ajax. In this tutorial you will learn how to implement Live Add, Edit and Delete DataTables Records with Ajax PHP and MySQL.
-                We will cover this tutorial in easy steps to create live example to jQuery DataTables to list records with live add, edit and delete record functionality. You can also download complete project. The download link is located at the end of tutorial.
+                Using USSD technology, ensures better interaction between parents, teachers and school management. It is the basic idea that knowledge oriented organization (school) has been set up as ground for people to go in and learn in respond to paying their acquired knowledge for.
+                Using Kenyan primary, secondary and tertiary level of education as case study, the research has the intention of creating a software that could process students’ overall performances in all school aspects through this mobile communication technology.
             </p>
+            <strong>Take a pause, as we dive in.</strong>
+        </div>
+
+        <div class="content is-small notification is-danger has-text-justified">
+            <h3>What's USSD</h3>
+            <p>
+                Unstructured Supplementary Service Data or USSD in short is a service that allows mobile phone users to interact with a remote application from their device in real time. A predefined session is started once a user dials in to facilitate the transfer of information between your application and the user. It is a highly scalable service as it does not require an internet connection and is supported by both feature and smartphones.
+            </p>
+            <h3>How does USSD Works?</h3>
+            <p>
+                USSD communication is initiated by dialling a special code. USSD codes comprise of <b>asterisk (*)</b>,
+                followed by a combination of digits (0 to 9) and a hash (#) Example <strong>*144#</strong>. The * and # codes are used to
+                signify the beginning and end of the request. The request is received by the network service providers:
+                <em>Africastalking</em>(recommended). <br>The third-party application i.e. the webserver, is exposed to the internet by the use
+                of <strong><a href="" target="_blank">ngrok</a></strong> or the <strong>localtunnel</strong>. This enables all data stored in the local <strong>MySQL </strong>to be accessible by the gateway.
+                <br>The <strong>call back URL</strong> is created thus communication link is set and the gateway send back response to the user.
+                The response send sets a session that enable user to access data in real-time with no delays.
+            </p>
+            <strong class="is-primary">Lets define some terms here.</strong>
+            <ul>
+                <li>Call back Url:</li>
+                <p>This is an address that a server provides, and any computer in the Internet/private network can POST data to it.</p>
+            </ul>
+
+            <strong>Now u've got a basic understanding of USSD and how it works. Have an ice-break with cup of Coffee.</strong>
+        </div>
+
+        <div class="content is-small notification is-warning has-text-justified">
+            <h3>First let's collect all that you need to get started.</h3>
+            <ol>
+                <li>Windows Operating System/ Linux</li>
+                <li>Any IDE: Jet brain PhpStorm(recommended)</li>
+                <li>Programming Language: PhP</li>
+                <li>Service Providers Account: Africastalking.</li>
+                <li>Test tool: Simulator.</li>
+                <li>Ngrok. Download <a href="https://ngrok.com/" target="_blank">here</a></li>
+                <li>Node Js for Localtunnel</li>
+                <li>Apache Web server i.e WAMPP,XAMPP,LAMPP</li>
+            </ol>
+            <strong>Hey Buddy!!No more breaks, let's dive in.</strong>
+            <em>Ensure you have created account with Africastalking. Take a look <a href="https://account.africastalking.com/auth/login/">here</a></em>
+            <h5>You will be provided with the following credential:</h5>
+            <ul>
+                <li>$username   = "Enter username"</li>
+                <li>$apikey     = "enter your api key";</li>
+            </ul>
+        </div>
+
+        <div class="content notification has-text-justified is-small is-primary">
+            <h3>Get this code sample from Github account.</h3>
+            <p>Click <a href="https://github.com/CollyneJumah/USSD">here</a> to clone or download the code.</p>
+            <ul>
+                <li>Extract the zip file and open the folder in your IDE.</li>
+            </ul>
+            <b>Step 1.</b><h4>Setting up Ngrok</h4>
+            After installation of Ngrok,
+            <p>run the command: <b>Ngrok http 80</b> to establish a connection on port 80: the port forwarding urls will be established to be used.
+                <img src="images/ngrok.png" class="is-24x24">
+                {ignore POSTS displayed}, focus on the forwarding Urls.
+                <br><br> <small>If you preffer local tunnelling,</small>
+                Using NodeJs, localtunnel will be installed by running the command in the nodeJs command line: <i>npm install –g localtunnel</i> followed by:
+                <i> lt –port 80</i>
+                <br>
+                Now let's create callback Url.
+            </p>
+            <b>Step 2.</b><h4>Creating Call back Url</h4>
+            <p>
+            <ul>
+                <li> Running locally, the Url is: https/localhost/USSD/index.php.</li>
+                <li>Since development is localhost and lives in the web root at /var/www/html/USSD or /opt/lampp/USSD for Ubuntu users,, for windows user it should be C:/xampp/htdocs/USSD. Using  of Ngrok, the publicly accessible url is: https://ae955e9a.ngrok.io (instead of http://localhost). (Create your own which will be different basing on the ngrok port forwarding.</li>
+                <li>The webhook or callback to this application therefore becomes: https://b11cd817.ngrok.io/MfUSSD/microfinanceUSSD.php. To allow the application to talk to the Africa's Talking USSD gateway, this callback URL is placed in the dashboard</li>
+
+                <img src="images/Callback.png" class="center is-loading">
+                <li>  Finally, this application works with a connection to a MYSQL database. Create a database name and 8-tables as shown in the code. Also create a session_levels table . These details are configured in the dbConnector.php and this is required in the main application script requestUSSD.php</li>
+            </ul>
+
+            </p>
+
         </div>
 
 
